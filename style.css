@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.png);
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 50%;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.navbar {
+    width: 200%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo { 
+    width: 160px;
+    cursor: pointer;
+}
+
+@keyframes logo{
+    from {width: 160px;}
+    to {width: 180px}
+}
+
+
+.logo:hover { 
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.cart { 
+    width: 40px;
+    cursor: pointer;
+}
+
+@keyframes cart{
+    from {width: 40px;}
+    to {width: 50px}
+}
+.cart:hover { 
+    animation-name: cart;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+nav {
+    flex: 1px;
+    padding-left: 150px
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #6a7199;
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes nav{
+    from { text-shadow: }
+    to { text-shadow: 1px 2px 2px rgba(94,28,68,.5) } 
+}
+
+nav ul li a:active {
+    text-decoration: none;
+    position: absolute;
+}
+
+.content {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.content h1{
+    font-size: 
+        60px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+
+
+.content p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #6a7199;
+}
+
+@keyframes collectionbutton{
+    from {padding: 10px 20px;
+    }
+    to { padding: 10px 25px;
+    
+    }
+    
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #6a7199;
+    box-shadow: 2px 3px 5px rgba(94,28,68,.5)
+}
+
+
+.content .btn:hover{
+    background: linear-gradient(45deg, #87adfe, #FFA8D6);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 4px 5px 5px rgba(94,28,68,.5);
+    animation-name: collectionbutton;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.content .btn:active{
+    position: relative;
+    top: 1px;
+}
+
+
+
+
+.arrow-icons {
+    margin-top: 20px;
+    display: block;
+    
+}
+
+.arrow-icons img {
+    width: 40px;
+    margin-right: 25px;
+    
+}
+
+@keyframes arrow{
+    from {width: 40px;}
+    to {width: 45px;}
+}
+
+.next:hover {
+    cursor: pointer;
+    animation-name: arrow;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+
+}
+
+.back:hover {
+    cursor: pointer;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.feature {
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+
+.footer {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -30px;
+    bottom: 130px;
+    
+}
+
+.footer a {
+   text-decoration: none;
+    color: #333;
+    padding-right: 20px;
+    font-size: 14px;
+    
+}
+
+
+.footer a:hover {
+   text-decoration: underline;
+    color: #6a7199;
+    padding-right: 20px;
+    font-size: 14px;
+    
+}
